@@ -3,7 +3,9 @@
 Simple library management web app using [Spring](https://spring.io/projects/spring-boot) and [Unpoly](https://unpoly.com/) +
 JSP.
 
-This project is for learning purpose.
+![Dashboard View](dashboard.png)
+
+This project is for learning purpose only.
 
 ## Requirement
 
@@ -33,7 +35,7 @@ SPRING_PROFILES_ACTIVE=false
 
 By default, the app will generate some required data if not exists,
 including: roles, permissions, default users, and one default shelf.
-Default user include:
+Default users include:
 
 - **librarian** - account with role librarian, can access almost every thing, except account control and execute
   dangerous action.
@@ -64,7 +66,7 @@ The default dev profile does not require any configuration:
 - H2 database console can be accessed via http://localhost:8080/h2-console (user: admin, password: 123456, JDBC URL:
   jdbc:h2:mem:test)
 
-You can disable fake data generation by setting this property. The required default data will still be generated.
+You can disable fake data generation by setting this property. Required default data will still be generated.
 
 ```properties
 config.data.enable-fake-data=false
@@ -78,7 +80,7 @@ To run app in "production", you need to tweak some config properties in ```appli
     ```properties
     spring.profiles.active = default
     ```
-   Setting this will automatically disable fake data generation. The required data like role, permission, default users
+   Setting this will automatically disable fake data generation. Required data like roles, permissions, default users
    will still be generated.
 
 2. **Setup mail**
