@@ -1,0 +1,29 @@
+name: Release GH
+on:
+  push:
+    # run only against tags
+    tags:
+      - "*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Java 11
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+      - name: Build
+        run: ./mvnw package
+      - name: Publish Release
+        uses: softprops/action-gh-release@v2
+        with:
+          make_latest: true
+          files: |
+            LICENSE
+            target/*.war

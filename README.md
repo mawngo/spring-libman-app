@@ -7,7 +7,7 @@ This project is for learning purpose.
 
 ## Requirement
 
-- Java 11
+- Java 11+
 - Maven (for development, optional)
 - SDKMan (for java tools management, optional)
 
