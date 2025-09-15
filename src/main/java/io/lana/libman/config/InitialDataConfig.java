@@ -143,7 +143,7 @@ class InitialDataConfig implements ApplicationRunner {
     @Transactional
     void initUser() {
         if (userRepo.count() > 0) return;
-        final var password = passwordEncoder.encode("1");
+        final var password = passwordEncoder.encode("123456");
 
         userRepo.saveAll(List.of(
                 User.newInstance("SYSTEM", "SYSTEM", passwordEncoder.encode(IdUtils.newTimeSortableId()), Collections.emptyList(), SYSTEM),

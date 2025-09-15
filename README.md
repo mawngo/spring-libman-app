@@ -29,7 +29,7 @@ default shelf. Default user include:
 - **admin** - account with role admin, can access every thing.
 - SYSTEM - no role.
 
-All generated user using same password: 1.
+All generated users using the same password: 123456.
 
 Role and permission will be auto generated and setup for each logic. There are some special permissions that you cannot
 delete:
