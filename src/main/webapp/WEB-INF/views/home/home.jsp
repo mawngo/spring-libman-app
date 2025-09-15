@@ -48,16 +48,7 @@
             <div class="product-grid">
                 <div class="feature-products">
                     <div class="row m-b-10">
-                        <div class="col-md-3 col-sm-2 products-total">
-                            <div class="square-product-setting d-inline-block"><a
-                                    class="ms-1 icon-grid grid-layout-view" href="javascript:void(0)">
-                                <i data-feather="grid"></i></a></div>
-                            <div class="square-product-setting d-inline-block">
-                                <a class="icon-grid m-0 list-layout-view"
-                                   href="javascript:void(0)">
-                                    <i data-feather="list"></i></a></div>
-                        </div>
-                        <div class="col-md-9 col-sm-10 text-end">
+                        <div class="col-12 text-end">
                             <span class="f-w-600 m-r-5 mt-2"><component:total pageMeta="${data}"
                                                                               verbose="${true}"/></span>
                             <div class="select2-drpdwn-product select-options d-inline-block">
